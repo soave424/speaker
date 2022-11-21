@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Random Order</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+
+
+    <div class="title"><발표자 뽑기></div>
+    <br />
+    <input type="button" value="뽑기" onclick="startrandom()"></input>
+    <input type="button" value="처음부터" onclick="location.reload()"></input>
+
+    
+    <br />
+    <h3 id="result">발표자를 뽑아주세요.</h3>
+    <h5 id="lastNum">남은사람은 :   명</h5>
+
+    <!-- <div class="option">
+      <div class="fontSize"> 글씨크기</div>   -->
+ 
+
+    <!-- <div class="result">
+        <div class="order">1번</div>
+        <div id="sName" class="name">이름</div>
+      </div> -->
+
+    <script src="index.js"></script>
+    <script>
+      // alert("경고")
+      // confirm("확인")
+      // var reply = prompt("당신의 이름은?"); // 입력값 받아서
+      // document.write(reply+"님 안녕하세요?"); //인사말 넣기
+
+      // var allNum = prompt("전체 학생수는?");
+      // var colNum = prompt("한 줄에 몇명 앉나요?");
+
+      // if(allNum % colNum === 0)
+      //   rowNum = parseInt(allNum / colNum);
+      // else
+      //   rowNum = parseInt(allNum / colNum) + 1;
+      // document.write("가로 " + colNum +"명씩 세로 "+ rowNum + "줄이 필요합니다.")
+
+      // var i, j;
+      // for (i=1; i<=9; i++){
+      //   document.write("<div>");
+      //   document.write(i+"단"+"<br>");
+      //   for (j = 1 ; j <= 9; j++){
+      //     document.write(i+"X"+j+"="+i*j+"<br>");
+      //   }
+      //   document.write("</div>");
+      //   if(i === 3) break;
+      // }    
+    </script>
+  </body>
+  <footer>
+    <input id="btnDN" type="button" value="darkmode" onclick="
+    var target = document.querySelector('body')
+    if(this.value === 'darkmode'){
+      target.style.backgroundColor = 'black';
+      target.style.color = 'white';
+      this.value = 'daymode';
+    }
+    else {target.style.backgroundColor = 'white';
+    target.style.color = 'black';
+    this.value = 'darkmode';}
+  ">
+  </footer>
+</html>

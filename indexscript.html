@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8">
+    <title>Random Order</title>
+
+
+    <style>
+    body {text-align: center;
+          font-size: 50px;}     
+  </style>
+
+
+  </head>
+  <body>   
+    <div class="title">
+      <form class="titleForm">
+        <input
+          name="title"
+          type="text"
+          placeholder="제목을 입력하세요."
+          autocomplete="off"
+          class="inputTitle"
+        />
+        <button>저장</button>
+      </form>
+    </div>
+           
+
+    <div class="option">
+      <button class="start">순서 섞기</button>
+      <div class="fontSize">
+        <div>글씨크기 : </div>  
+        <button>작게</button>
+        <button>크게</button>  
+      </div>
+             
+
+      <div class="result">
+        <div class="order">1번</div>
+        <div id="sName" class="name">이름</div>
+      </div>
+            
+      <script>
+var heading = document.querySelector('#sName');
+sName.onclick = function(){
+  sName.style.color="red"
+}
+      </script>
+
+
+  </body>
+</html>
